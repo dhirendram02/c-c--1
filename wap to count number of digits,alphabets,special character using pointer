@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+	char s[100], *p;
+    int alph=0;digit=0;specichar=0;
+	gets(s);
+    p=s;
+    while(*p){
+	    if((*p>= 'a' && *p <= 'z')|| *p >= 'A' && *p <= 'Z'))
+	    {
+	      alph++;
+	    }
+	   else if(ch >= '0' && ch <= '9')
+	    {
+	       digit++;
+	    }
+	    else
+	    {
+	      specichar++; 
+	    }
+        p++;
+    }
+     printf("alphabets = %d",alph);
+      printf("Digits = %d",digit);
+       printf("special character= %d",specichar);
+	return 0;
+}

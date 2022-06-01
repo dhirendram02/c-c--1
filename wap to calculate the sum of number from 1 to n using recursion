@@ -1,0 +1,20 @@
+#include<stdio.h>
+int calc_sum(int);
+int main()
+{
+int i,num,result;
+scanf("%d",&sum);
+result=calc_sum(num);
+printf("%d",result);
+return 0;
+}
+int calc_sum(int num){
+int res;
+if(num==1){
+return(1);
+}
+else{
+res=num+calc_sum(num-1);
+}
+return(res);
+}

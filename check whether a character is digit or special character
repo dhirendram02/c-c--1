@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+	char ch;
+	
+	scanf("%c",&ch);
+	    if((ch >= 'a' && ch <= 'z')|| ch >= 'A' && ch <= 'Z'))
+	    {
+	        printf("Alphabets  = %c",ch);
+	    }
+	   else if(ch >= '0' && ch <= '9')
+	    {
+	        printf("Digits = %c",ch);
+	    }
+	    else
+	    {
+	     printf("special character  = %c",ch);   
+	    }
+	return 0;
+}

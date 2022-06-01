@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main()
+{
+    int arr[100], pos, c, n, value;
+
+    scanf("%d", &n);
+
+    for(c = 0; c < n; c++)
+        scanf("%d", &arr[c]);
+    scanf("%d", &pos);
+
+    scanf("%d", &value);
+
+    for(c = n-1; c >= pos-1; c--)
+        arr[c+1] = arr[c];
+
+    arr[pos - 1] = value;
+    
+    for(c = 0; c <= n; c++) 
+        printf("%d  ", arr[c]);
+
+    return 0;
+}

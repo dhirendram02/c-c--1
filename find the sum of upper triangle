@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,r,c,sum=0,n;
+    int arr[50][50];
+    scanf("%d",&n);
+    a=b=n;
+
+    for(r=0;r<a;r++)
+    {
+        for(c=0;c<b;c++)
+        {
+            scanf("%d",&arr[r][c]);
+          if(r<c)
+          {
+            sum = sum + arr[r][c];
+            }
+        }
+    }
+    printf("%d",sum);
+
+    return 0;
+}

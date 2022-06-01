@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Circle</title>
+</head>
+<body>
+    <p>Area of circle  =</p>
+    <p id="area"></p>
+
+    <script>
+    let pi = 3.14;
+    let  r = 2;
+    let aoc = pi*r*r;
+    document.getElementById("area").innerHTML = aoc;
+    </script>
+</body>
+</html>

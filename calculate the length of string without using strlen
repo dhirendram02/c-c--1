@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+	char name[40];
+	int count = 0;
+	scanf("%s",name);
+	while(name[count]!='\0')
+	{
+	    count=count+1;
+	}
+	printf("%d",count);
+	return 0;
+}
+
